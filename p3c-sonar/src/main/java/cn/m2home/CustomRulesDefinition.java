@@ -34,4 +34,5 @@ public class CustomRulesDefinition implements RulesDefinition {
             IOUtils.closeQuietly(stream);
         }
     }
+
 }

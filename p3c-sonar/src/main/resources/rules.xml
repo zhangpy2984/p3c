@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rules>
     <rule key = "CommentsMustBeJavadocFormatRule">
-        <name>Components标签后不能跟随Components标签规则</name>
+        <name>CommentsMustBeJavadocFormatRule</name>
         <priority>MAJOR</priority>
         <configKey>rulesets/java/ali-comment.xml/CommentsMustBeJavadocFormatRule</configKey>
+        <description>java.comment.CommentsMustBeJavadocFormatRule.rule.msg</description>
     </rule>
 </rules>

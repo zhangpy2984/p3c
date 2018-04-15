@@ -4,7 +4,7 @@
     <name>Custom Quality</name>
     <rules>
         <rule>
-            <repositoryKey>custom-repo</repositoryKey>
+            <repositoryKey>CommentsMustBeJavadocFormatRule</repositoryKey>
             <key>CommentsMustBeJavadocFormatRule</key>
             <priority>MAJOR</priority>
         </rule>
