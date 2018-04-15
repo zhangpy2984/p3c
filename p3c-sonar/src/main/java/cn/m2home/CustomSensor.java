@@ -44,6 +44,9 @@ public class CustomSensor implements Sensor {
     }
 
     public void execute(SensorContext context) {
+
+        context.activeRules().find(null);
+
         final File reportFile = new File(context.fileSystem().workDir(), "report.xml");
 
         LOG.info("start run pmd analysis...");

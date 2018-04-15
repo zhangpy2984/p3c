@@ -22,7 +22,7 @@ public class CustomRulesDefinition implements RulesDefinition {
     @Override
     public void define(Context context) {
 
-        final InputStream stream = getClass().getResourceAsStream("rules.xml");
+        final InputStream stream = getClass().getResourceAsStream("/rules.xml");
         final NewRepository repository = context.createRepository(REPOSITORY_KEY, CustomLanguage.KEY);
 
         try {
