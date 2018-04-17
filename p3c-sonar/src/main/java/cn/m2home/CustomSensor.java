@@ -1,6 +1,9 @@
 package cn.m2home;
 
 import net.sourceforge.pmd.PMD;
+import net.sourceforge.pmd.Report;
+import net.sourceforge.pmd.RuleContext;
+import net.sourceforge.pmd.processor.PmdRunnable;
 import org.apache.commons.io.IOUtils;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
@@ -16,6 +19,7 @@ import org.sonar.api.batch.sensor.issue.NewIssueLocation;
 import org.sonar.api.rule.RuleKey;
 import org.sonar.api.utils.log.Logger;
 import org.sonar.api.utils.log.Loggers;
+import org.sonar.plugins.java.Java;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -30,37 +34,31 @@ import java.util.List;
 public class CustomSensor implements Sensor {
 
 
-    private static Logger LOG = Loggers.get(Sensor.class);
+    private static Logger logger = Loggers.get(Sensor.class);
 
-    private final CustomLanguage custom;
-
-    public CustomSensor(CustomLanguage custom) {
-        this.custom = custom;
-    }
 
     public void describe(SensorDescriptor descriptor) {
         descriptor.name("CustomSensor")
-                .onlyOnLanguage(custom.getKey());
+                .onlyOnLanguage(Java.KEY);
     }
 
     public void execute(SensorContext context) {
-
-        context.activeRules().find(null);
-
         final File reportFile = new File(context.fileSystem().workDir(), "report.xml");
 
-        LOG.info("start run pmd analysis...");
+        logger.info("report file path is " + context.fileSystem().workDir());
+
+        logger.info("start run pmd analysis...");
         runPMD(context, reportFile);
-        LOG.info("end run pmd analysis.");
+        logger.info("end run pmd analysis.");
 
         try {
-            LOG.debug("contents: \n{}", IOUtils.toString(new FileInputStream(reportFile)));
+            logger.debug("contents: \n{}", IOUtils.toString(new FileInputStream(reportFile)));
         } catch (IOException e) {
-            LOG.error("fail to print content. error is {}", e);
+            logger.error("fail to print content. error is {}", e);
         }
-        LOG.info("start report...");
+        logger.info("start report...");
         convertToIssues(context, doc(reportFile));
-        LOG.info("end report.");
+        logger.info("end report.");
     }
 
     private void convertToIssues(SensorContext context, Document doc) {
@@ -73,7 +71,7 @@ public class CustomSensor implements Sensor {
             final FileSystem fs = context.fileSystem();
             final InputFile inputFile = fs.inputFile(fs.predicates().hasAbsolutePath(filePath));
             if (inputFile == null) {
-                LOG.info("fs predicates that there is no {}", filePath);
+                logger.info("fs predicates that there is no {}", filePath);
                 continue;
             }
             for (Element violation : violations) {
@@ -99,16 +97,18 @@ public class CustomSensor implements Sensor {
         try {
             doc = new SAXReader().read(reportFile);
         } catch (DocumentException e) {
-            LOG.error("Cannot read report xml file: {}.", reportFile);
+            logger.error("Cannot read report xml file: {}.", reportFile);
         }
         return doc;
     }
 
     private void runPMD(SensorContext context, File reportFile) {
+//        final String dir = context.settings().getString("sonar.sources");
+        logger.info("context setting {}", context.config().get("sonar.sources"));
         final String dir = context.settings().getString("sonar.sources");
         final File file = new File(dir);
-        LOG.info("files listed here: {}", Arrays.toString(file.listFiles()));
-        String path = "rulesets/java/" ;
+        logger.info("files listed here: {}", Arrays.toString(file.listFiles()));
+        String path = "rulesets/java/";
         String ruleFile = path + "ali-comment.xml";
         String[] pmdArgs = {
                 "-f", "xml",
@@ -120,7 +120,7 @@ public class CustomSensor implements Sensor {
                 "-version", "1.0"
         };
 
-        LOG.info("the pmd args are: {}.", Arrays.toString(pmdArgs));
+        logger.info("the pmd args are: {}.", Arrays.toString(pmdArgs));
         final ClassLoader loader = Thread.currentThread().getContextClassLoader();
         try {
             Thread.currentThread().setContextClassLoader(getClass().getClassLoader());

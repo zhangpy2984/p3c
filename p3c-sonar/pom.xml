@@ -12,6 +12,7 @@
 
     <properties>
         <jdk.min.version>1.8</jdk.min.version>
+        <sonarjava.version>5.1.1.13214</sonarjava.version>
     </properties>
 
     <dependencies>
@@ -31,16 +32,28 @@
             <artifactId>pmd-core</artifactId>
             <version>6.2.0</version>
         </dependency>
-        <!--<dependency>
-            <groupId>org.sonarsource.sslr-squid-bridge</groupId>
+        <dependency>
+            <groupId>org.sonarsource.java</groupId>
+            <artifactId>sonar-java-plugin</artifactId>
+            <version>${sonarjava.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.sonar.sslr-squid-bridge</groupId>
             <artifactId>sslr-squid-bridge</artifactId>
-            <version>2.7.0.377</version>
-        </dependency>-->
-        <!--<dependency>
+            <version>2.6</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.codehaus.sonar</groupId>
+                    <artifactId>sonar-plugin-api</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
             <groupId>jdom</groupId>
             <artifactId>jdom</artifactId>
             <version>1.0</version>
-        </dependency>-->
+        </dependency>
         <dependency>
             <groupId>org.sonarsource.sonarqube</groupId>
             <artifactId>sonar-plugin-api</artifactId>
@@ -72,6 +85,15 @@
     </dependencies>
 
     <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.sonarsource.scanner.maven</groupId>
+                    <artifactId>sonar-maven-plugin</artifactId>
+                    <version>3.4.0.905</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
         <plugins>
             <plugin>
                 <groupId>org.sonarsource.sonar-packaging-maven-plugin</groupId>
@@ -93,62 +115,6 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
-
-          <!--  <plugin>
-                <artifactId>maven-assembly-plugin</artifactId>
-                <configuration>
-                    <descriptorRefs>
-                        <descriptorRef>jar-with-dependencies</descriptorRef>
-                    </descriptorRefs>
-                </configuration>
-            </plugin>-->
-
-            <!--<plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>native2ascii-maven-plugin</artifactId>
-                <version>1.0-beta-1</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>native2ascii</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <groupId>com.github.eirslett</groupId>
-                <artifactId>frontend-maven-plugin</artifactId>
-                <version>1.6</version>
-                <executions>
-                    <execution>
-                        <phase>generate-resources</phase>
-                        <id>install node and yarn</id>
-                        <goals>
-                            <goal>install-node-and-yarn</goal>
-                        </goals>
-                        <configuration>
-                            <nodeVersion>v8.5.0</nodeVersion>
-                            <yarnVersion>v1.1.0</yarnVersion>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>yarn install</id>
-                        <goals>
-                            <goal>yarn</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <phase>generate-resources</phase>
-                        <id>yarn run script</id>
-                        <goals>
-                            <goal>yarn</goal>
-                        </goals>
-                        <configuration>
-                            <arguments>run build</arguments>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>-->
         </plugins>
     </build>
 

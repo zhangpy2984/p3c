@@ -19,8 +19,7 @@ public class CustomPlugin implements Plugin {
      */
     @Override
     public void define(Context context) {
-        context.addExtension(CustomLanguage.class)
-                .addExtension(CustomRulesDefinition.class)
+        context.addExtension(CustomRulesDefinition.class)
                 .addExtension(CustomProfileDefinition.class)
                 .addExtension(CustomSensor.class);
     }
