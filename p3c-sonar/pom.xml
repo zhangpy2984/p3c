@@ -101,7 +101,7 @@
                 <version>1.17</version>
                 <extensions>true</extensions>
                 <configuration>
-                    <pluginClass>cn.m2home.CustomPlugin</pluginClass>
+                    <pluginClass>cn.m2home.CustomP3cPlugin</pluginClass>
                     <pluginDescription>how to write sonar plugin</pluginDescription>
                     <addMavenDescriptor>true</addMavenDescriptor>
                 </configuration>

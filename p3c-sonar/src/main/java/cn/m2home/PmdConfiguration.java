@@ -37,8 +37,8 @@ import java.io.StringWriter;
 public class PmdConfiguration implements BatchExtension {
   private static final Logger LOG = LoggerFactory.getLogger(PmdConfiguration.class);
 
-  public static final String PROPERTY_GENERATE_XML = "sonar.pmd.generateXml";
-  public static final String PMD_RESULT_XML = "pmd-result.xml";
+  public static final String PROPERTY_GENERATE_XML = "sonar.p3c.generateXml";
+  public static final String PMD_RESULT_XML = "p3c-result.xml";
 
   private final FileSystem fileSystem;
   private final Settings settings;
