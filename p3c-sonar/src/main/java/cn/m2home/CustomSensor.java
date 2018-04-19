@@ -37,11 +37,13 @@ public class CustomSensor implements Sensor {
     private static Logger logger = Loggers.get(Sensor.class);
 
 
+    @Override
     public void describe(SensorDescriptor descriptor) {
         descriptor.name("CustomSensor")
                 .onlyOnLanguage(Java.KEY);
     }
 
+    @Override
     public void execute(SensorContext context) {
         final File reportFile = new File(context.fileSystem().workDir(), "report.xml");
 
