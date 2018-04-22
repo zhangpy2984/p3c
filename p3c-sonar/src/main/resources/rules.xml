@@ -217,5 +217,50 @@
     </rule>
     <!--ali-naming end -->
 
+    <!-- ali-oop begin-->
+    <rule key="EqualsAvoidNullRule">
+        <name>p3c-EqualsAvoidNullRule</name>
+        <priority>MAJOR</priority>
+        <configKey>rulesets/java/ali-oop.xml/EqualsAvoidNullRule</configKey>
+        <description>java.comment.EqualsAvoidNullRule.rule.msg</description>
+    </rule>
+    <rule key="WrapperTypeEqualityRule">
+        <name>p3c-WrapperTypeEqualityRule</name>
+        <priority>MAJOR</priority>
+        <configKey>rulesets/java/ali-oop.xml/WrapperTypeEqualityRule</configKey>
+        <description>java.comment.WrapperTypeEqualityRule.rule.msg</description>
+    </rule>
+    <rule key="PojoMustUsePrimitiveFieldRule">
+        <name>p3c-PojoMustUsePrimitiveFieldRule</name>
+        <priority>MAJOR</priority>
+        <configKey>rulesets/java/ali-oop.xml/PojoMustUsePrimitiveFieldRule</configKey>
+        <description>java.comment.PojoMustUsePrimitiveFieldRule.rule.msg</description>
+    </rule>
+    <rule key="PojoMustOverrideToStringRule">
+        <name>p3c-PojoMustOverrideToStringRule</name>
+        <priority>MAJOR</priority>
+        <configKey>rulesets/java/ali-oop.xml/PojoMustOverrideToStringRule</configKey>
+        <description>java.comment.PojoMustOverrideToStringRule.rule.msg</description>
+    </rule>
+    <rule key="StringConcatRule">
+        <name>p3c-StringConcatRule</name>
+        <priority>MAJOR</priority>
+        <configKey>rulesets/java/ali-oop.xml/StringConcatRule</configKey>
+        <description>java.comment.StringConcatRule.rule.msg</description>
+    </rule>
+    <!-- ali-oop end-->
+
+    <!-- ali-orm begin-->
+    <rule key="IbatisMethodQueryForListRule">
+        <name>p3c-IbatisMethodQueryForListRule</name>
+        <priority>MAJOR</priority>
+        <configKey>rulesets/java/ali-oop.xml/IbatisMethodQueryForListRule</configKey>
+        <description>java.comment.IbatisMethodQueryForListRule.rule.msg</description>
+    </rule>
+    <!-- ali-orm end-->
+
+    <!-- ali-other begin-->
+    <!-- ali-other end-->
+
 
 </rules>
