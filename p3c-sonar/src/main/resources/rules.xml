@@ -260,7 +260,70 @@
     <!-- ali-orm end-->
 
     <!-- ali-other begin-->
+    <rule key="AvoidPatternCompileInMethodRule">
+        <name>p3c-AvoidPatternCompileInMethodRule</name>
+        <priority>MAJOR</priority>
+        <configKey>rulesets/java/ali-other.xml/AvoidPatternCompileInMethodRule</configKey>
+        <description>java.comment.AvoidPatternCompileInMethodRule.rule.msg</description>
+    </rule>
+    <rule key="AvoidApacheBeanUtilsCopyRule">
+        <name>p3c-AvoidApacheBeanUtilsCopyRule</name>
+        <priority>MAJOR</priority>
+        <configKey>rulesets/java/ali-other.xml/AvoidApacheBeanUtilsCopyRule</configKey>
+        <description>java.comment.AvoidApacheBeanUtilsCopyRule.rule.msg</description>
+    </rule>
+    <rule key="AvoidNewDateGetTimeRule">
+        <name>p3c-AvoidNewDateGetTimeRule</name>
+        <priority>MAJOR</priority>
+        <configKey>rulesets/java/ali-other.xml/AvoidNewDateGetTimeRule</configKey>
+        <description>java.comment.AvoidNewDateGetTimeRule.rule.msg</description>
+    </rule>
+    <rule key="AvoidMissUseOfMathRandomRule">
+        <name>p3c-AvoidMissUseOfMathRandomRule</name>
+        <priority>MAJOR</priority>
+        <configKey>rulesets/java/ali-other.xml/AvoidMissUseOfMathRandomRule</configKey>
+        <description>java.comment.AvoidMissUseOfMathRandomRule.rule.msg</description>
+    </rule>
     <!-- ali-other end-->
+
+    <!-- ali-set begin-->
+    <rule key="ClassCastExceptionWithToArrayRule">
+        <name>p3c-AvoidMissUseOfMathRandomRule</name>
+        <priority>MAJOR</priority>
+        <configKey>rulesets/java/ali-set.xml/ClassCastExceptionWithToArrayRule</configKey>
+        <description>java.comment.ClassCastExceptionWithToArrayRule.rule.msg</description>
+    </rule>
+    <rule key="UnsupportedExceptionWithModifyAsListRule">
+        <name>p3c-UnsupportedExceptionWithModifyAsListRule</name>
+        <priority>MAJOR</priority>
+        <configKey>rulesets/java/ali-set.xml/UnsupportedExceptionWithModifyAsListRule</configKey>
+        <description>java.comment.UnsupportedExceptionWithModifyAsListRule.rule.msg</description>
+    </rule>
+    <rule key="ClassCastExceptionWithSubListToArrayListRule">
+        <name>p3c-ClassCastExceptionWithSubListToArrayListRule</name>
+        <priority>MAJOR</priority>
+        <configKey>rulesets/java/ali-set.xml/ClassCastExceptionWithSubListToArrayListRule</configKey>
+        <description>java.comment.ClassCastExceptionWithSubListToArrayListRule.rule.msg</description>
+    </rule>
+    <rule key="ConcurrentExceptionWithModifyOriginSubListRule">
+        <name>p3c-ConcurrentExceptionWithModifyOriginSubListRule</name>
+        <priority>MAJOR</priority>
+        <configKey>rulesets/java/ali-set.xml/ConcurrentExceptionWithModifyOriginSubListRule</configKey>
+        <description>java.comment.ConcurrentExceptionWithModifyOriginSubListRule.rule.msg</description>
+    </rule>
+    <rule key="DontModifyInForeachCircleRule">
+        <name>p3c-DontModifyInForeachCircleRule</name>
+        <priority>MAJOR</priority>
+        <configKey>rulesets/java/ali-set.xml/DontModifyInForeachCircleRule</configKey>
+        <description>java.comment.DontModifyInForeachCircleRule.rule.msg</description>
+    </rule>
+    <rule key="CollectionInitShouldAssignCapacityRule">
+        <name>p3c-CollectionInitShouldAssignCapacityRule</name>
+        <priority>MAJOR</priority>
+        <configKey>rulesets/java/ali-set.xml/CollectionInitShouldAssignCapacityRule</configKey>
+        <description>java.comment.CollectionInitShouldAssignCapacityRule.rule.msg</description>
+    </rule>
+    <!-- ali-set end-->
 
 
 </rules>

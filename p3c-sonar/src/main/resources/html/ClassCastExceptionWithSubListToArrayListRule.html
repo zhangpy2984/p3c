@@ -1,0 +1,18 @@
+ArrayList的subList结果不可强转成ArrayList，否则会抛出ClassCastException异常。<br/>
+<p>
+    说明:禁止强转，如果需要用到集合特性方法，请新建一个集合，然后置入sublist,new 集合(sublist结果)。
+</p>
+<pre>
+    Negative example:
+    List&lt;String&gt; list = new ArrayList&lt;String&gt;();
+    list.add("22");
+    //warn
+	List&lt;String&gt; test = (ArrayList&lt;String&gt;) list.subList(0, 1);
+
+    <p>
+        <br/>
+    </p>
+    <pre>Positive example:
+   List&lt;String&gt; list2 = new ArrayList&lt;String&gt;(list.subList(0, 1));
+    </pre>
+</pre>
