@@ -95,13 +95,13 @@
     <rule key="UpperEllRule">
         <name>p3c-UpperEllRule</name>
         <priority>MAJOR</priority>
-        <configKey>rulesets/java/ali-concurrent.xml/UpperEllRule</configKey>
+        <configKey>rulesets/java/ali-constant.xml/UpperEllRule</configKey>
         <description>java.comment.UpperEllRule.rule.msg</description>
     </rule>
     <rule key="UndefineMagicConstantRule">
         <name>p3c-UndefineMagicConstantRule</name>
         <priority>MAJOR</priority>
-        <configKey>rulesets/java/ali-concurrent.xml/UndefineMagicConstantRule</configKey>
+        <configKey>rulesets/java/ali-constant.xml/UndefineMagicConstantRule</configKey>
         <description>java.comment.UndefineMagicConstantRule.rule.msg</description>
     </rule>
     <!--ali-constant end-->
@@ -254,7 +254,7 @@
     <rule key="IbatisMethodQueryForListRule">
         <name>p3c-IbatisMethodQueryForListRule</name>
         <priority>MAJOR</priority>
-        <configKey>rulesets/java/ali-oop.xml/IbatisMethodQueryForListRule</configKey>
+        <configKey>rulesets/java/ali-orm.xml/IbatisMethodQueryForListRule</configKey>
         <description>java.comment.IbatisMethodQueryForListRule.rule.msg</description>
     </rule>
     <!-- ali-orm end-->
