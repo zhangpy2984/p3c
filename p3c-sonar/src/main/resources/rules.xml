@@ -148,4 +148,74 @@
     </rule>
     <!--ali-flowcontrol end-->
 
+    <!--ali-naming begin -->
+    <rule key="ClassNamingShouldBeCamelRule">
+        <name>p3c-ClassNamingShouldBeCamelRule</name>
+        <priority>MAJOR</priority>
+        <configKey>rulesets/java/ali-naming.xml/ClassNamingShouldBeCamelRule</configKey>
+        <description>java.comment.ClassNamingShouldBeCamelRule.rule.msg</description>
+    </rule>
+    <rule key="AbstractClassShouldStartWithAbstractNamingRule">
+        <name>p3c-AbstractClassShouldStartWithAbstractNamingRule</name>
+        <priority>MAJOR</priority>
+        <configKey>rulesets/java/ali-naming.xml/AbstractClassShouldStartWithAbstractNamingRule</configKey>
+        <description>java.comment.AbstractClassShouldStartWithAbstractNamingRule.rule.msg</description>
+    </rule>
+    <rule key="ExceptionClassShouldEndWithExceptionRule">
+        <name>p3c-ExceptionClassShouldEndWithExceptionRule</name>
+        <priority>MAJOR</priority>
+        <configKey>rulesets/java/ali-naming.xml/ExceptionClassShouldEndWithExceptionRule</configKey>
+        <description>java.comment.ExceptionClassShouldEndWithExceptionRule.rule.msg</description>
+    </rule>
+    <rule key="TestClassShouldEndWithTestNamingRule">
+        <name>p3c-TestClassShouldEndWithTestNamingRule</name>
+        <priority>MAJOR</priority>
+        <configKey>rulesets/java/ali-naming.xml/TestClassShouldEndWithTestNamingRule</configKey>
+        <description>java.comment.TestClassShouldEndWithTestNamingRule.rule.msg</description>
+    </rule>
+    <rule key="LowerCamelCaseVariableNamingRule">
+        <name>p3c-LowerCamelCaseVariableNamingRule</name>
+        <priority>MAJOR</priority>
+        <configKey>rulesets/java/ali-naming.xml/LowerCamelCaseVariableNamingRule</configKey>
+        <description>java.comment.LowerCamelCaseVariableNamingRule.rule.msg</description>
+    </rule>
+    <rule key="AvoidStartWithDollarAndUnderLineNamingRule">
+        <name>p3c-AvoidStartWithDollarAndUnderLineNamingRule</name>
+        <priority>MAJOR</priority>
+        <configKey>rulesets/java/ali-naming.xml/AvoidStartWithDollarAndUnderLineNamingRule</configKey>
+        <description>java.comment.AvoidStartWithDollarAndUnderLineNamingRule.rule.msg</description>
+    </rule>
+    <rule key="ConstantFieldShouldBeUpperCaseRule">
+        <name>p3c-ConstantFieldShouldBeUpperCaseRule</name>
+        <priority>MAJOR</priority>
+        <configKey>rulesets/java/ali-naming.xml/ConstantFieldShouldBeUpperCaseRule</configKey>
+        <description>java.comment.ConstantFieldShouldBeUpperCaseRule.rule.msg</description>
+    </rule>
+    <rule key="ServiceOrDaoClassShouldEndWithImplRule">
+        <name>p3c-ServiceOrDaoClassShouldEndWithImplRule</name>
+        <priority>MAJOR</priority>
+        <configKey>rulesets/java/ali-naming.xml/ServiceOrDaoClassShouldEndWithImplRule</configKey>
+        <description>java.comment.ServiceOrDaoClassShouldEndWithImplRule.rule.msg</description>
+    </rule>
+    <rule key="PackageNamingRule">
+        <name>p3c-PackageNamingRule</name>
+        <priority>MAJOR</priority>
+        <configKey>rulesets/java/ali-naming.xml/PackageNamingRule</configKey>
+        <description>java.comment.PackageNamingRule.rule.msg</description>
+    </rule>
+    <rule key="BooleanPropertyShouldNotStartWithIsRule">
+        <name>p3c-BooleanPropertyShouldNotStartWithIsRule</name>
+        <priority>MAJOR</priority>
+        <configKey>rulesets/java/ali-naming.xml/BooleanPropertyShouldNotStartWithIsRule</configKey>
+        <description>java.comment.BooleanPropertyShouldNotStartWithIsRule.rule.msg</description>
+    </rule>
+    <rule key="ArrayNamingShouldHaveBracketRule">
+        <name>p3c-ArrayNamingShouldHaveBracketRule</name>
+        <priority>MAJOR</priority>
+        <configKey>rulesets/java/ali-naming.xml/ArrayNamingShouldHaveBracketRule</configKey>
+        <description>java.comment.ArrayNamingShouldHaveBracketRule.rule.msg</description>
+    </rule>
+    <!--ali-naming end -->
+
+
 </rules>
