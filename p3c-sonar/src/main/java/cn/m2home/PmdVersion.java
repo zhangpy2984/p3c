@@ -27,7 +27,7 @@ import java.io.InputStream;
 import java.util.Properties;
 
 public final class PmdVersion {
-  private static final String PROPERTIES_PATH = "/org/sonar/plugins/pmd/pmd-plugin.properties";
+  private static final String PROPERTIES_PATH = "/pmd-plugin.properties";
 
   private PmdVersion() {
     // Static utility class

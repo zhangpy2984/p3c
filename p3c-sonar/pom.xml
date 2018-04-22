@@ -13,6 +13,7 @@
     <properties>
         <jdk.min.version>1.8</jdk.min.version>
         <sonarjava.version>5.1.1.13214</sonarjava.version>
+        <pmd.version>5.5.2</pmd.version>
     </properties>
 
     <dependencies>
@@ -30,7 +31,7 @@
         <dependency>
             <groupId>net.sourceforge.pmd</groupId>
             <artifactId>pmd-core</artifactId>
-            <version>6.2.0</version>
+            <version>${pmd.version}</version>
         </dependency>
         <dependency>
             <groupId>org.sonarsource.java</groupId>

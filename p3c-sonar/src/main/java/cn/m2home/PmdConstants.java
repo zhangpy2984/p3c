@@ -20,10 +20,10 @@
 package cn.m2home;
 
 public final class PmdConstants {
-  public static final String PLUGIN_NAME = "PMD";
-  public static final String PLUGIN_KEY = "pmd";
+  public static final String PLUGIN_NAME = "p3c";
+  public static final String PLUGIN_KEY = "p3c-sonar-repo";
   public static final String REPOSITORY_KEY = PLUGIN_KEY;
-  public static final String REPOSITORY_NAME = "PMD";
+  public static final String REPOSITORY_NAME = "p3c-sonar-repo";
   public static final String TEST_REPOSITORY_KEY = "pmd-unit-tests";
   public static final String TEST_REPOSITORY_NAME = "PMD Unit Tests";
   public static final String XPATH_CLASS = "net.sourceforge.pmd.lang.rule.XPathRule";

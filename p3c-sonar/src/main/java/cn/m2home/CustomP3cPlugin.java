@@ -25,6 +25,7 @@ import org.sonar.api.config.PropertyDefinition;
 
 import java.util.List;
 
+///sdsdgsdgasfsd
 public class CustomP3cPlugin extends SonarPlugin {
 
     @Override
@@ -32,7 +33,7 @@ public class CustomP3cPlugin extends SonarPlugin {
         return ImmutableList.of(
                 PropertyDefinition.builder(PmdConfiguration.PROPERTY_GENERATE_XML)
                         .defaultValue("false")
-                        .name("Generate XML Report")
+                        .name("Generate p3c XML Report")
                         .hidden()
                         .build(),
 

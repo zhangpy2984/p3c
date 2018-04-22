@@ -1,5 +1,31 @@
-Detects when a field, formal or local variable is declared with a long name.
+<example>
+    <![CDATA[
+    /**
+    *
+    * XXX class function description.
+    *
+    */
+    public class XxClass implements Serializable {
+    private static final long serialVersionUID = 113323427779853001L;
+    /**
+    * id
+    */
+    private Long id;
+    /**
+    * title
+    */
+    private String title;
 
-<p>
-    This rule is deprecated, use {rule:squid:S00117} instead.
-</p>
+    /**
+    * find by id
+    *
+    * @param ruleId rule id
+    * @param page start from 1
+    * @return Result<Xxxx>
+    */
+    public Result<Xxxx> funcA(Long ruleId, Integer page) {
+    return null;
+    }
+    }
+    ]]>
+</example>
