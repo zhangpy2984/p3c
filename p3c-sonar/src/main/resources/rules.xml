@@ -1,9 +1,42 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rules>
-    <rule key = "CommentsMustBeJavadocFormatRule">
-        <name>CommentsMustBeJavadocFormatRule</name>
+    <!--ali-comments begin-->
+    <rule key="CommentsMustBeJavadocFormatRule">
+        <name>p3c-CommentsMustBeJavadocFormatRule</name>
         <priority>MAJOR</priority>
         <configKey>rulesets/java/ali-comment.xml/CommentsMustBeJavadocFormatRule</configKey>
         <description>java.comment.CommentsMustBeJavadocFormatRule.rule.msg</description>
     </rule>
+
+    <rule key="AbstractMethodOrInterfaceMethodMustUseJavadocRule">
+        <name>p3c-AbstractMethodOrInterfaceMethodMustUseJavadocRule</name>
+        <priority>MAJOR</priority>
+        <configKey>rulesets/java/ali-comment.xml/AbstractMethodOrInterfaceMethodMustUseJavadocRule</configKey>
+        <description>java.comment.AbstractMethodOrInterfaceMethodMustUseJavadocRule.rule.msg</description>
+    </rule>
+    <rule key="ClassMustHaveAuthorRule">
+        <name>p3c-ClassMustHaveAuthorRule</name>
+        <priority>MAJOR</priority>
+        <configKey>rulesets/java/ali-comment.xml/ClassMustHaveAuthorRule</configKey>
+        <description>java.comment.ClassMustHaveAuthorRule.rule.msg</description>
+    </rule>
+    <rule key="EnumConstantsMustHaveCommentRule">
+        <name>p3c-EnumConstantsMustHaveCommentRule</name>
+        <priority>MAJOR</priority>
+        <configKey>rulesets/java/ali-comment.xml/EnumConstantsMustHaveCommentRule</configKey>
+        <description>java.comment.EnumConstantsMustHaveCommentRule.rule.msg</description>
+    </rule>
+    <rule key="AvoidCommentBehindStatementRule">
+        <name>p3c-AvoidCommentBehindStatementRule</name>
+        <priority>MAJOR</priority>
+        <configKey>rulesets/java/ali-comment.xml/AvoidCommentBehindStatementRule</configKey>
+        <description>java.comment.AvoidCommentBehindStatementRule.rule.msg</description>
+    </rule>
+    <rule key="RemoveCommentedCodeRule">
+        <name>p3c-RemoveCommentedCodeRule</name>
+        <priority>MAJOR</priority>
+        <configKey>rulesets/java/ali-comment.xml/RemoveCommentedCodeRule</configKey>
+        <description>java.comment.RemoveCommentedCodeRule.rule.msg</description>
+    </rule>
+    <!--ali-comments end-->
 </rules>

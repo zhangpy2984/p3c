@@ -1,31 +1,33 @@
-<example>
-    <![CDATA[
-    /**
-    *
-    * XXX class function description.
-    *
-    */
-    public class XxClass implements Serializable {
+类、类属性、类方法的注释必须使用javadoc规范，使用/**内容*/格式，不得使用//xxx方式和/*xxx*/方式。<br/>
+例如：
+<p>
+<pre>/**
+ *
+ * XXX class function description.
+ *
+ */
+public class XxClass implements Serializable {
     private static final long serialVersionUID = 113323427779853001L;
     /**
-    * id
-    */
+     * id
+     */
     private Long id;
     /**
-    * title
-    */
+     * title
+     */
     private String title;
-
     /**
-    * find by id
-    *
-    * @param ruleId rule id
-    * @param page start from 1
-    * @return Result<Xxxx>
-    */
-    public Result<Xxxx> funcA(Long ruleId, Integer page) {
-    return null;
+     * find by id
+     *
+     * @param ruleId rule id
+     * @param page start from 1
+     * @return Result&lt;Xxxx&gt;
+     */
+    public Result&lt;Xxxx&gt; funcA(Long ruleId, Integer page) {
+        return null;
     }
-    }
-    ]]>
-</example>
+}</pre>
+</p>
+<p>
+    <br />
+</p>
