@@ -91,4 +91,61 @@
     </rule>
     <!--ali-concurrent end -->
 
+    <!--ali-constant begin-->
+    <rule key="UpperEllRule">
+        <name>p3c-UpperEllRule</name>
+        <priority>MAJOR</priority>
+        <configKey>rulesets/java/ali-concurrent.xml/UpperEllRule</configKey>
+        <description>java.comment.UpperEllRule.rule.msg</description>
+    </rule>
+    <rule key="UndefineMagicConstantRule">
+        <name>p3c-UndefineMagicConstantRule</name>
+        <priority>MAJOR</priority>
+        <configKey>rulesets/java/ali-concurrent.xml/UndefineMagicConstantRule</configKey>
+        <description>java.comment.UndefineMagicConstantRule.rule.msg</description>
+    </rule>
+    <!--ali-constant end-->
+
+    <!--ali-exception begin-->
+    <rule key="MethodReturnWrapperTypeRule">
+        <name>p3c-MethodReturnWrapperTypeRule</name>
+        <priority>MAJOR</priority>
+        <configKey>rulesets/java/ali-exception.xml/MethodReturnWrapperTypeRule</configKey>
+        <description>java.comment.MethodReturnWrapperTypeRule.rule.msg</description>
+    </rule>
+    <rule key="AvoidReturnInFinallyRule">
+        <name>p3c-AvoidReturnInFinallyRule</name>
+        <priority>MAJOR</priority>
+        <configKey>rulesets/java/ali-exception.xml/AvoidReturnInFinallyRule</configKey>
+        <description>java.comment.AvoidReturnInFinallyRule.rule.msg</description>
+    </rule>
+    <rule key="TransactionMustHaveRollbackRule">
+        <name>p3c-TransactionMustHaveRollbackRule</name>
+        <priority>MAJOR</priority>
+        <configKey>rulesets/java/ali-exception.xml/TransactionMustHaveRollbackRule</configKey>
+        <description>java.comment.TransactionMustHaveRollbackRule.rule.msg</description>
+    </rule>
+    <!--ali-exception end-->
+
+    <!--ali-flowcontrol begin-->
+    <rule key="SwitchStatementRule">
+        <name>p3c-SwitchStatementRule</name>
+        <priority>MAJOR</priority>
+        <configKey>rulesets/java/ali-flowcontrol.xml/SwitchStatementRule</configKey>
+        <description>java.comment.SwitchStatementRule.rule.msg</description>
+    </rule>
+    <rule key="NeedBraceRule">
+        <name>p3c-NeedBraceRule</name>
+        <priority>MAJOR</priority>
+        <configKey>rulesets/java/ali-flowcontrol.xml/NeedBraceRule</configKey>
+        <description>java.comment.NeedBraceRule.rule.msg</description>
+    </rule>
+    <rule key="AvoidComplexConditionRule">
+        <name>p3c-AvoidComplexConditionRule</name>
+        <priority>MAJOR</priority>
+        <configKey>rulesets/java/ali-flowcontrol.xml/AvoidComplexConditionRule</configKey>
+        <description>java.comment.AvoidComplexConditionRule.rule.msg</description>
+    </rule>
+    <!--ali-flowcontrol end-->
+
 </rules>
