@@ -1,8 +1,10 @@
-该应用是基于阿里p3c-pmd进行编写的。
+<pre>
+<p>
+	
+<pre>该应用是基于阿里p3c-pmd进行编写的。
 目前主要用于我们公司的sonarqube检测java代码质量情况。
 代码参照sonar-pmd源代码写的 参见：https://github.com/SonarQubeCommunity/sonar-pmd
 代码能够在sonarqube 7.0完美运行，编译环境为jdk1.8
-
 现在我们启用的规则如下：
 ClassNamingShouldBeCamelRule
 PackageNamingRule
@@ -49,3 +51,9 @@ ExceptionClassShouldEndWithExceptionRule
 AvoidMissUseOfMathRandomRule
 UnsupportedExceptionWithModifyAsListRule
 UpperEllRule
+</pre>
+</p>
+<p>
+	<br />
+</p>
+</pre>
