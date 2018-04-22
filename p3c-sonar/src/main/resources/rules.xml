@@ -39,4 +39,56 @@
         <description>java.comment.RemoveCommentedCodeRule.rule.msg</description>
     </rule>
     <!--ali-comments end-->
+
+    <!--ali-concurrent begin -->
+    <rule key="ThreadPoolCreationRule">
+        <name>p3c-ThreadPoolCreationRule</name>
+        <priority>MAJOR</priority>
+        <configKey>rulesets/java/ali-concurrent.xml/ThreadPoolCreationRule</configKey>
+        <description>java.comment.ThreadPoolCreationRule.rule.msg</description>
+    </rule>
+    <rule key="AvoidUseTimerRule">
+        <name>p3c-AvoidUseTimerRule</name>
+        <priority>MAJOR</priority>
+        <configKey>rulesets/java/ali-concurrent.xml/AvoidUseTimerRule</configKey>
+        <description>java.comment.AvoidUseTimerRule.rule.msg</description>
+    </rule>
+    <rule key="AvoidManuallyCreateThreadRule">
+        <name>p3c-AvoidManuallyCreateThreadRule</name>
+        <priority>MAJOR</priority>
+        <configKey>rulesets/java/ali-concurrent.xml/AvoidManuallyCreateThreadRule</configKey>
+        <description>java.comment.AvoidManuallyCreateThreadRule.rule.msg</description>
+    </rule>
+    <rule key="ThreadShouldSetNameRule">
+        <name>p3c-ThreadShouldSetNameRule</name>
+        <priority>MAJOR</priority>
+        <configKey>rulesets/java/ali-concurrent.xml/ThreadShouldSetNameRule</configKey>
+        <description>java.comment.ThreadShouldSetNameRule.rule.msg</description>
+    </rule>
+    <rule key="AvoidCallStaticSimpleDateFormatRule">
+        <name>p3c-AvoidCallStaticSimpleDateFormatRule</name>
+        <priority>MAJOR</priority>
+        <configKey>rulesets/java/ali-concurrent.xml/AvoidCallStaticSimpleDateFormatRule</configKey>
+        <description>java.comment.AvoidCallStaticSimpleDateFormatRule.rule.msg</description>
+    </rule>
+    <rule key="ThreadLocalShouldRemoveRule">
+        <name>p3c-ThreadLocalShouldRemoveRule</name>
+        <priority>MAJOR</priority>
+        <configKey>rulesets/java/ali-concurrent.xml/ThreadLocalShouldRemoveRule</configKey>
+        <description>java.comment.ThreadLocalShouldRemoveRule.rule.msg</description>
+    </rule>
+    <rule key="AvoidConcurrentCompetitionRandomRule">
+        <name>p3c-AvoidConcurrentCompetitionRandomRule</name>
+        <priority>MAJOR</priority>
+        <configKey>rulesets/java/ali-concurrent.xml/AvoidConcurrentCompetitionRandomRule</configKey>
+        <description>java.comment.AvoidConcurrentCompetitionRandomRule.rule.msg</description>
+    </rule>
+    <rule key="CountDownShouldInFinallyRule">
+        <name>p3c-CountDownShouldInFinallyRule</name>
+        <priority>MAJOR</priority>
+        <configKey>rulesets/java/ali-concurrent.xml/CountDownShouldInFinallyRule</configKey>
+        <description>java.comment.CountDownShouldInFinallyRule.rule.msg</description>
+    </rule>
+    <!--ali-concurrent end -->
+
 </rules>
