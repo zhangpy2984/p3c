@@ -1,4 +1,4 @@
-package cn.xyz.message;
+package cn.xyz.io.message;
 
 import java.util.HashMap;
 import java.util.Map;

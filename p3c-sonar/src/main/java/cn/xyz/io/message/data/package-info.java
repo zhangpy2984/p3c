@@ -4,4 +4,4 @@
  * @author zhangpengyue
  * @date 2018/8/12
  */
-package cn.xyz.message.data;
+package cn.xyz.io.message.data;

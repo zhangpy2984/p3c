@@ -14,6 +14,7 @@
         <jdk.min.version>1.8</jdk.min.version>
         <sonarjava.version>5.1.1.13214</sonarjava.version>
         <pmd.version>5.5.2</pmd.version>
+        <sonar-plugin-api.version>6.0</sonar-plugin-api.version>
     </properties>
 
     <dependencies>
@@ -58,7 +59,7 @@
         <dependency>
             <groupId>org.sonarsource.sonarqube</groupId>
             <artifactId>sonar-plugin-api</artifactId>
-            <version>7.0</version>
+            <version>${sonar-plugin-api.version}</version>
             <scope>provided</scope>
         </dependency>
         <!--<dependency>

@@ -1,10 +1,9 @@
-package cn.xyz.message.impl;
+package cn.xyz.io.message.impl;
 
-import cn.xyz.message.AbstractMessageProcessor;
-import cn.xyz.message.IMessageSender;
-import cn.xyz.message.MessageSendUtils;
+import cn.xyz.io.message.IMessageSender;
+import cn.xyz.io.message.MessageSendUtils;
+import cn.xyz.io.message.AbstractMessageProcessor;
 
-import java.util.List;
 import java.util.Map;
 
 /**

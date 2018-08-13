@@ -1,9 +1,9 @@
-package cn.xyz.message.process;
+package cn.xyz.io.message.process;
 
-import cn.xyz.message.AbstractMessageProcessor;
-import cn.xyz.message.IMessageTemplateChooser;
-import cn.xyz.message.MsgTemplate;
-import cn.xyz.message.data.UnderwMsgData;
+import cn.xyz.io.message.AbstractMessageProcessor;
+import cn.xyz.io.message.IMessageTemplateChooser;
+import cn.xyz.io.message.MsgTemplate;
+import cn.xyz.io.message.data.UnderwMsgData;
 
 import java.util.List;
 

@@ -1,8 +1,8 @@
-package cn.xyz.message.template;
+package cn.xyz.io.message.template;
 
-import cn.xyz.message.IMessageTemplateChooser;
-import cn.xyz.message.MsgTemplate;
-import cn.xyz.message.data.UnderwMsgData;
+import cn.xyz.io.message.IMessageTemplateChooser;
+import cn.xyz.io.message.MsgTemplate;
+import cn.xyz.io.message.data.UnderwMsgData;
 
 import java.util.List;
 

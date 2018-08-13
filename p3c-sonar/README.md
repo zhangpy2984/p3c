@@ -21,8 +21,7 @@ AvoidUseTimerRule
 CountDownShouldInFinallyRule
 MethodReturnWrapperTypeRule
 AvoidReturnInFinallyRule
-///魔法值问题，需谨慎监测
-UndefineMagicConstantRule
+ UndefineMagicConstantRule
 AvoidCommentBehindStatementRule
 CommentsMustBeJavadocFormatRule
 AbstractMethodOrInterfaceMethodMustUseJavadocRule
@@ -35,7 +34,6 @@ AvoidComplexConditionRule
 NeedBraceRule
 TransactionMustHaveRollbackRule
 SwitchStatementRule
-///我们自己定义的emun目前基本上都有desc字段，所以这个规则不需要
 EnumConstantsMustHaveCommentRule
 AvoidStartWithDollarAndUnderLineNamingRule
 StringConcatRule
@@ -54,6 +52,18 @@ UpperEllRule
 </pre>
 </p>
 <p>
-	<br />
+	我们这边不做检查的项如下：
+	///魔法值问题，需谨慎监测
+    UndefineMagicConstantRule
+    CommentsMustBeJavadocFormatRule
+    EnumConstantsMustHaveCommentRule
+    AvoidCommentBehindStatementRule
+    RemoveCommentedCodeRule
+    AbstractMethodOrInterfaceMethodMustUseJavadocRule
+    CollectionInitShouldAssignCapacityRule
+    LowerCamelCaseVariableNamingRule
+    NeedBraceRule
+    ClassMustHaveAuthorRule
+    AvoidComplexConditionRule
 </p>
 </pre>

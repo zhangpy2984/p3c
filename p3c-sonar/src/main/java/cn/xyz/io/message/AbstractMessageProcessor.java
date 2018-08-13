@@ -1,6 +1,4 @@
-package cn.xyz.message;
-
-import net.sf.saxon.type.ListType;
+package cn.xyz.io.message;
 
 import javax.xml.crypto.Data;
 import java.util.List;

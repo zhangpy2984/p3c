@@ -1,4 +1,4 @@
-package cn.xyz.message.data;
+package cn.xyz.io.message.data;
 
 /**
  * @author zhangpengyue
